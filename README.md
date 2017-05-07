@@ -9,15 +9,21 @@ The list can either have distinct values or permit duplicates.
 # public OrderedList(Func<T, T, int> comparer = null, bool permitDuplicates = true, bool replace = true)
 
 comparer - If null and T is IComparable, will use T.Comparer() as the comparer
+
 permitDuplicates - The list can contain duplicate items.
+
 replace - If permitDuplicates is false, and replace true, new items with the same compared value of 0, will be replaced.
 
 # public OrderedList(IEnumerable<T> range, Func<T, T, int> comparer, bool permitDuplicates = true, bool replace = true, bool rangeIsAlreadySorted = false)
 
 range - An item enumerable to start the ordered list with
+
 comparer - If null and T is IComparable, will use T.Comparer() as the comparer
+
 permitDuplicates - The list can contain duplicate items.
+
 replace - If permitDuplicates is false, and replace true, new items with the same compared value of 0, will be replaced.
+
 rangeIsAlreadySorted - if true, start the internal list with the range, else add each one individually
 
 
@@ -135,3 +141,6 @@ Re-sort the list with own comparer.
 ## Static Methods
 # public static OrderedList<O> NewOrderedList<O>
 New OrderedList of type T, no duplicates and doesn't replace if found on add.
+
+## Extra
+There are a bunch of list.BinarySearch type extension methods included with this package.
