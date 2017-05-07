@@ -1,2 +1,2 @@
-# OrderedList<<T>> : IList<<T>>
+# OrderedList<<TT>> : IList<<TT>>
 A C# Ordered List
