@@ -1,2 +1,2 @@
-# OrderedList<<TT>> : IList<<TT>>
-A C# Ordered List
+# OrderedList<< T >> : IList<< T >>
+A thread safe C# generic ordered list

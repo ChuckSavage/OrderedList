@@ -10,7 +10,7 @@ namespace SeaRisenLib2.Collections
     /// <summary>
     /// <para>An Ordered List.</para>
     /// <para>If the Generic Class inherits IComparable, then comparer to constructor can be null.</para>
-    /// <para>Not thread safe.</para>
+    /// <para>Thread safe.</para>
     /// </summary>
     /// <typeparam name="T"></typeparam>
     [DebuggerDisplay("Count = {Count}")]
