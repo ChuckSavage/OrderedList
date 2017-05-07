@@ -58,7 +58,7 @@ namespace SeaRisenLib2.Collections
         /// </summary>
         /// <param name="comparer">If null and T is IComparable, will use T.Comparer() as the comparer</param>
         /// <param name="permitDuplicates">The list can contain duplicate items.</param>
-        /// <param name="replace">If permitDuplicates if false, and replace true, new items with the same compared value of 0, will be replaced.</param>
+        /// <param name="replace">If permitDuplicates is false, and replace true, new items with the same compared value of 0, will be replaced.</param>
         public OrderedList(Func<T, T, int> comparer = null, bool permitDuplicates = true, bool replace = true)
         {
             if (null == comparer)
@@ -261,7 +261,7 @@ namespace SeaRisenLib2.Collections
         }
 
         /// <summary>
-        /// Remove an array of items
+        /// Remove an array of items.
         /// </summary>
         /// <param name="items"></param>
         public virtual void Remove(params T[] items)
@@ -364,7 +364,7 @@ namespace SeaRisenLib2.Collections
         }
 
         /// <summary>
-        /// Re-sort the list
+        /// Re-sort the list.
         /// </summary>
         public virtual void Sort()
         {
@@ -564,7 +564,7 @@ namespace SeaRisenLib2.Collections
         }
 
         /// <summary>
-        /// New OrderedList of type T, no duplicates and doesn't replace if found on add
+        /// New OrderedList of type T, no duplicates and doesn't replace if found on add.
         /// </summary>
         public static OrderedList<O> NewOrderedList<O>
         (
