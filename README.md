@@ -8,7 +8,7 @@ The list can either have distinct values or permit duplicates.
 ## Constructors
 # public OrderedList()
 
-Create OrderedList for a type that implents IComparable.
+Create non-duplicate, non-replacing OrderedList for a type that implents IComparable. Ordered Lists of this type do not permit duplicates, and do not replace values that are the same as those found in the list when added.
 
 All base types like string, int and float all implement IComparable.
 
