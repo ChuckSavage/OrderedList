@@ -6,6 +6,12 @@ Uses the Binary Search algorithm to add and find values within the list.
 The list can either have distinct values or permit duplicates.
 
 ## Constructors
+# public OrderedList()
+
+Create OrderedList for a type that implents IComparable.
+
+All base types like string, int and float all implement IComparable.
+
 # public OrderedList(Func<T, T, int> comparer = null, bool permitDuplicates = true, bool replace = true)
 
 comparer - If null and T is IComparable, will use T.Comparer() as the comparer
